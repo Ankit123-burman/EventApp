@@ -5,7 +5,7 @@ const cors = require('cors')
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-lwhq.vercel.app"],
+        origin: ["http://localhost:4000/events"],
         methord: ['GET'],
         credentials: true
     }    
