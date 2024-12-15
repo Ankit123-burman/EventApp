@@ -3,7 +3,13 @@ const app = express()
 const port = 4000
 const cors = require('cors')
 
-app.use(cors())
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-lwhq.vercel.app"],
+        methord: ['GET'],
+        credentials: true
+    }    
+))
 
 const events = [
     {
